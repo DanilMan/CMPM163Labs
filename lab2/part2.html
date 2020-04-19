@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lab 2: Intro to Three.js Part 2</title>
+		<style>
+			body { margin: 0; }
+			canvas { display: block; }
+		</style>
+	</head>
+	<body>
+		<script src="../three.js-master/build/three.js"></script>
+		<script 
+src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
+		<script>
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight,0.1, 1000);
+
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+			camera.position.z = 200;
+
+			var light = new THREE.PointLight(0xffffff, 1, 1000);
+			light.position.set(50, 50, 50);
+			scene.add(light);
+
+			light = new THREE.PointLight(0xc20411, 3, 100);
+			light.position.set(-2, 60, 10);
+			scene.add(light);
+
+			light = new THREE.PointLight(0xe2f230, 5, 10);
+			light.position.set(12, 68, -12);
+			scene.add(light);
+
+			light = new THREE.PointLight(0xe2f230, 5, 9);
+			light.position.set(-14, 68, -20);
+			scene.add(light);
+
+			var loader = new THREE.GLTFLoader();
+
+			loader.load('dog.glb', function (gltf) {
+				scene.add(gltf.scene);
+				gltf.scene.position.x = 50;
+				gltf.scene.position.z = 15;
+				gltf.scene.rotation.x = 2;
+				gltf.scene.scale.y = 1.5;
+			}, function (xhr) {
+				console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+			}, function (error) {
+				console.error(error);
+			});
+
+
+
+			loader.load('cat.glb', function (gltf) {
+				scene.add(gltf.scene);
+				gltf.scene.position.x = -70;
+				gltf.scene.rotation.y = -0.3;
+				gltf.scene.position.z = 20;
+				gltf.scene.rotation.x = 0.7;
+				gltf.scene.scale.y = 1.6;
+			}, function (xhr) {
+				console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+			}, function (error) {
+				console.error(error);
+			});
+
+			loader.load('rabbit.glb', function (gltf) {
+				scene.add(gltf.scene);
+				gltf.scene.rotation.y = -0.3;
+				gltf.scene.position.z = -20;
+				gltf.scene.scale.y = 5;
+				gltf.scene.scale.x = 5;
+			}, function (xhr) {
+				console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+			}, function (error) {
+				console.error(error);
+			});
+
+			function animate() {
+				requestAnimationFrame(animate);
+				renderer.render(scene, camera);
+			}
+			animate();
+		</script>
+	</body>
+</html>
