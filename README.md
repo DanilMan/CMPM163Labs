@@ -27,7 +27,7 @@ glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 but I couldn't figure out how to incorporate them into my program. Later, I found out that three.js has a wrapS and wrapT property on a texture and I could change it's mapping mode with THREE.RepeatWrapping. I'm sure there's many ways to do this, and I would like to learn more about it.
 
-24.
+24)
 
 a) In order to get the pixel of a texture sample from a u value you use u*8, 8 being the x length of the texture sample.
 
