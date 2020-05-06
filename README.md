@@ -34,3 +34,16 @@ a) In order to get the pixel of a texture sample from a u value you use u*8, 8 b
 b) In order to get the pixel of a texture sample from a v value you use v*8, 8 being the y length of the texture sample.
 
 c) The uv coordinate (0.375, 0.25) maps to the (3, 2) which is a gray colored pixel.
+
+## Lab5
+
+# 1. The link to a video of me moving around the static particles that change colors
+https://drive.google.com/open?id=1VFNOXfXAqMg39t560XlvyMIl6LIVKDlK
+
+# 2. The link to a video of the explosion of particles
+https://drive.google.com/file/d/1eqCSIIOheGmgH8alJD2OXDDV2M0YPESw/view?usp=sharing
+
+# 3. The link to a video of my custom particle animation
+https://drive.google.com/open?id=1-QaMj-mK0dXx-cWE5BqGzae2lGpD_bmZ
+
+
