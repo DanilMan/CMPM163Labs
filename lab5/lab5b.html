@@ -10,6 +10,7 @@
 	</head>
 	<body>
 		<script src="../three.js-master/build/three.js"></script>
+		<script src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
 		<script>
 			// setup the scene
 			var scene = new THREE.Scene();
@@ -17,11 +18,19 @@
 			var renderer = new THREE.WebGLRenderer();
 			renderer.setSize(window.innerWidth, window.innerHeight);
 			document.body.appendChild(renderer.domElement);
-			camera.position.z = 60;
+			camera.position.z = 30;
+
+			var light = new THREE.PointLight(0xffffff, 1, 1000);
+			light.position.set(0, 0, 0);
+			scene.add(light);
+
+			var light2 = new THREE.PointLight(0xffffff, 1, 1000);
+			light2.position.set(0, 0, 0);
+			scene.add(light2);
 
 			particles = []
 			const geo = new THREE.Geometry()
-			for(let i=0; i<100; i++) {
+			for(let i=0; i<5000; i++) {
 				const particle = {
 					position: new THREE.Vector3(
 						Math.random() * 2 - 1,
@@ -39,33 +48,48 @@
 				geo.vertices.push(particle.position)
 			}
 
+			var loader = new THREE.GLTFLoader();
+
+			var doggo;
+
+			loader.load('dog.glb', function (gltf) {
+				doggo = gltf.scene;
+				scene.add(doggo);
+				doggo.position.y = -1;
+				doggo.rotation.x = 0;
+				doggo.scale.set(.1, .1, .1);
+			}, function (xhr) {
+				console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+			}, function (error) {
+				console.error(error);
+			});
+
 			var sprite = new THREE.TextureLoader().load('Corona.png');
-			const mat = new THREE.PointsMaterial({ size: 2, map: sprite, alphaTest: .5, transparent: true});
+			const mat = new THREE.PointsMaterial({ size: .7, map: sprite, alphaTest: .5, transparent: true});
 			mesh = new THREE.Points(geo,mat);
 			mesh.position.z = -4;
 			scene.add(mesh);
 
 			function animate() {
 				particles.forEach(p => {
+					
+					var xrand = Math.cos(performance.now()/900);
+					p.velocity.x += p.acceleration.x;
+					p.position.x += p.velocity.x * xrand;
 
-					if(Math.sin(performance.now()/900) > 0){
-						p.velocity.x += p.acceleration.x * Math.sin(performance.now()/900);
-						p.position.x += p.velocity.x * Math.sin(performance.now()/900);
-					}
-					else if(Math.sin(performance.now()/900) < 0){
-						p.velocity.x -= p.acceleration.x * Math.sin(performance.now()/900);
-						p.position.x += p.velocity.x * Math.sin(performance.now()/900);
-					}
-					if(Math.cos(performance.now()/900) > 0){
-						p.velocity.y += p.acceleration.y * Math.cos(performance.now()/900);
-						p.position.y += p.velocity.y * Math.cos(performance.now()/900);
-					}
-					else if(Math.cos(performance.now()/900) < 0){
-						p.velocity.y -= p.acceleration.y * Math.cos(performance.now()/900);
-						p.position.y += p.velocity.y * Math.cos(performance.now()/900);
-					}
+					var yrand = Math.sin(performance.now()/900);
+					p.velocity.y += p.acceleration.y;
+					p.position.y += p.velocity.y * yrand;
+
+					var zrand = Math.sin(performance.now()/300);
+					p.position.z += p.velocity.y * zrand * 3;
 					
-					
+					light.position.x = 5*Math.sin(performance.now()/900);
+					light.position.z = 5*Math.cos(performance.now()/900);
+
+					light2.position.y = 5*Math.cos(performance.now()/900);
+					light2.position.z = 5*Math.sin(performance.now()/900);
+
 				});
 				mesh.geometry.verticesNeedUpdate = true;
 
