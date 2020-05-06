@@ -37,13 +37,13 @@ c) The uv coordinate (0.375, 0.25) maps to the (3, 2) which is a gray colored pi
 
 ## Lab5
 
-### 1. The link to a video of me moving around the static particles that change colors
+#### 1. The link to a video of me moving around the static particles that change colors
 https://drive.google.com/open?id=1VFNOXfXAqMg39t560XlvyMIl6LIVKDlK
 
-### 2. The link to a video of the explosion of particles
+#### 2. The link to a video of the explosion of particles
 https://drive.google.com/file/d/1eqCSIIOheGmgH8alJD2OXDDV2M0YPESw/view?usp=sharing
 
-### 3. The link to a video of my custom particle animation
+#### 3. The link to a video of my custom particle animation
 https://drive.google.com/open?id=1-QaMj-mK0dXx-cWE5BqGzae2lGpD_bmZ
 
 In order to create this animation, I used the combination of the sine and cosine math functions in javascript with the performance.now function, to give me a continous increase in numbers, to form a rotational pattern along the x, y and z axis of the particle group. I also used the same method to animate the lights around the dog mesh.
