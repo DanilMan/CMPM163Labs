@@ -35,7 +35,7 @@ b) In order to get the pixel of a texture sample from a v value you use v*8, 8 b
 
 c) The uv coordinate (0.375, 0.25) maps to the (3, 2) which is a gray colored pixel.
 
-## Lab5
+## Lab 5
 
 #### 1. The link to a video of me moving around the static particles that change colors
 https://drive.google.com/open?id=1VFNOXfXAqMg39t560XlvyMIl6LIVKDlK
@@ -48,7 +48,7 @@ https://drive.google.com/open?id=1-QaMj-mK0dXx-cWE5BqGzae2lGpD_bmZ
 
 In order to create this animation, I used the combination of the sine and cosine math functions in javascript with the performance.now function, to give me a continous increase in numbers, to form a rotational pattern along the x, y and z axis of the particle group. I also used the same method to animate the lights around the dog mesh.
 
-## Lab6
+## Lab 6
 
 #### i. Screenshot of objects:
 ![](lab6/unitylab6.jpg)
@@ -63,5 +63,10 @@ Real object:
 Recreation:
 ![](lab6/unitycandle.jpg)
 #### iv. Explanation of object's material:
+For the object I started by making a basic mesh of the candle in Maya. Then I imported it into unity and I used the standard shader and used the Fade rendering mode on the glass container. I made it completely metallic, so it would be very reflective, and gave it a slight amount of smoothness. 
+#### v. Description of two textured objects:
+
+#### vi. Description of skybox:
+
 
 
