@@ -50,6 +50,7 @@ In order to create this animation, I used the combination of the sine and cosine
 
 ## Lab6
 
-![alt-text-1](lab6/realcandle.jpg) ![alt-text-2](lab6/unitycandle.jpg)
+:-------------------------:|:-------------------------:
+![](lab6/realcandle.jpg)  |  ![](lab6/unitycandle.jpg)
 
 ![](lab6/unitylab6.jpg)
