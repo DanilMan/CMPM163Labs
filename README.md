@@ -47,3 +47,21 @@ https://drive.google.com/file/d/1eqCSIIOheGmgH8alJD2OXDDV2M0YPESw/view?usp=shari
 https://drive.google.com/open?id=1-QaMj-mK0dXx-cWE5BqGzae2lGpD_bmZ
 
 In order to create this animation, I used the combination of the sine and cosine math functions in javascript with the performance.now function, to give me a continous increase in numbers, to form a rotational pattern along the x, y and z axis of the particle group. I also used the same method to animate the lights around the dog mesh.
+
+## Lab6
+
+#### i. Screenshot of objects:
+![](lab6/unitylab6.jpg)
+#### ii. Definitions:
+Point light: Sends light out in all directions equally within its radius.
+Spotlight: Sends light out in a cone-shaped reigion from its constrained angle.
+Directional light: Simulates sunlight like light, infinitely far away, that light up the scene from a specific angle.
+Area light: Defined by a rectangular space, the light is emitted in all directions across its surface, from one side of the rectangle.
+#### iii.
+Real object:
+![](lab6/realcandle.jpg)
+Recreation:
+![](lab6/unitycandle.jpg)
+#### iv. Explanation of object's material:
+
+
