@@ -47,3 +47,11 @@ https://drive.google.com/file/d/1eqCSIIOheGmgH8alJD2OXDDV2M0YPESw/view?usp=shari
 https://drive.google.com/open?id=1-QaMj-mK0dXx-cWE5BqGzae2lGpD_bmZ
 
 In order to create this animation, I used the combination of the sine and cosine math functions in javascript with the performance.now function, to give me a continous increase in numbers, to form a rotational pattern along the x, y and z axis of the particle group. I also used the same method to animate the lights around the dog mesh.
+
+## Lab6
+
+![](lab6/realcandle.jpg)
+
+![](lab6/unitycandle.jpg)
+
+![](lab6/unitylab6.jpg)
