@@ -63,10 +63,8 @@ Real object:
 Recreation:
 ![](lab6/unitycandle.jpg)
 #### iv. Explanation of object's material:
-For the object I started by making a basic mesh of the candle in Maya. Then I imported it into unity and I used the standard shader and used the Fade rendering mode on the glass container. I made it completely metallic, so it would be very reflective, and gave it a slight amount of smoothness. 
+For the object I started by making a basic mesh of the candle in Maya. Then I imported it into unity and I used the standard shader and used the Fade rendering mode on the glass container. I made it completely metallic, so it would be very reflective, and it almost 85% smoothness and it became shinny like glass. I also added a texture and a normal map of a dimpled material. This made it look almost more like ice then class, but it still looks pretty nice. The wax I used the image of a bumpy wall for the metallic texture and turned the smoothness pretty low. I also added a normal map of the texture. Lastly, the wick I simply shrunk a simple cylander object in unity and added the wood texture from the ground and used the glass normal map and brought down its metallic and smoothness levels.
 #### v. Description of two textured objects:
-
+I used a wood texture and normal map for the plane I used as the ground for my scene. I also used a sharred wood texture and normal map for the sphere.
 #### vi. Description of skybox:
-
-
-
+For the skybox I downloaded the AllSkyFree pack from the unity asset store and used their Deep Dusk skybox.
