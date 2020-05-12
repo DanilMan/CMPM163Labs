@@ -50,7 +50,18 @@ In order to create this animation, I used the combination of the sine and cosine
 
 ## Lab6
 
-:-------------------------:|:-------------------------:
-![](lab6/realcandle.jpg)  |  ![](lab6/unitycandle.jpg)
-
+#### i. Screenshot of objects:
 ![](lab6/unitylab6.jpg)
+#### ii. Definitions:
+Point light: Sends light out in all directions equally within its radius.
+Spotlight: Sends light out in a cone-shaped reigion from its constrained angle.
+Directional light: Simulates sunlight like light, infinitely far away, that light up the scene from a specific angle.
+Area light: Defined by a rectangular space, the light is emitted in all directions across its surface, from one side of the rectangle.
+#### iii.
+Real object:
+![](lab6/realcandle.jpg)
+Recreation:
+![](lab6/unitycandle.jpg)
+#### iv. Explanation of object's material:
+
+
