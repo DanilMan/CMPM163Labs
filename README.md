@@ -78,7 +78,7 @@ For the skybox I downloaded the AllSkyFree pack from the unity asset store and u
 ![](lab7/terrain.png)
 #### part 2a texture 2 with height map:
 ![](lab7/BOB.jpg)
-video of moving image:
+video of image:
 https://drive.google.com/open?id=1haDZuBR9nxYjdTwkyL-rqULAi4nH7rSx
 #### part 2b:
 video of waves:
