@@ -92,3 +92,5 @@ video of scene:
 https://drive.google.com/open?id=1HJY7PDIFFiSav-u2qM9GMqoOlmco2NkC
 ##### accidental modern art:
 ![](lab7/water.png)
+#### Group Members:
+My partner, Matthew, worked on the part 1 portion for this lab and created a scene in unity with an island which he used a basic shapes with vertex shader on them to make them look rigid like a stone island. He also added a yellowish light flowing out from the center of the island which imitated the last scene from a favorite film of his, which was pretty amusing. Lastly, for the water's waves, he chose to use a height map on it in order to make it look more realistic than using just a basic sin wave motion to its vertex shader, and that was pretty impressive.
