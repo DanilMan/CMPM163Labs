@@ -71,3 +71,7 @@ For the object I started by making a basic mesh of the candle in Maya. Then I im
 I used a wood texture and normal map for the plane I used as the ground for my scene. I also used a charred wood texture and normal map for the sphere.
 #### vi. Description of skybox:
 For the skybox I downloaded the AllSkyFree pack from the unity asset store and used their Deep Dusk skybox.
+
+## Lab 7
+
+![](lab7/BOB.jpg)
