@@ -84,6 +84,9 @@ https://drive.google.com/open?id=1haDZuBR9nxYjdTwkyL-rqULAi4nH7rSx
 video of waves:
 https://drive.google.com/open?id=1G6Pu9upCQVyLVUrkFdk1a6WRw_MLYV5g
 #### part 2b:
+Inspiration (Bob Ross):
+![](lab7/real_bob.png)
+Mountain + Water scene:
 ![](lab7/lab7+2c.jpg)
 video of scene:
 https://drive.google.com/open?id=1HJY7PDIFFiSav-u2qM9GMqoOlmco2NkC
