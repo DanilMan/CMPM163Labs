@@ -90,3 +90,5 @@ Mountain + Water scene:
 ![](lab7/lab7+2c.jpg)
 video of scene:
 https://drive.google.com/open?id=1HJY7PDIFFiSav-u2qM9GMqoOlmco2NkC
+###### accidental modern art:
+![](lab7/water.png)
