@@ -100,4 +100,4 @@ My partner, Matthew, worked on the part 1 portion for this lab and created a sce
 #### image of insirational city:
 ![](lab8/NY_housing.jpg)
 #### image of generated city:
-![](lab8/Procedural City.jpg)
+![](lab8/Procedural_City.jpg)
