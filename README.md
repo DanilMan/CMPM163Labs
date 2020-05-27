@@ -101,3 +101,5 @@ My partner, Matthew, worked on the part 1 portion for this lab and created a sce
 ![](lab8/NY_housing.jpg)
 #### image of generated city:
 ![](lab8/Procedural_City.jpg)
+#### My Design:
+I remembered that city from playing GTA Liberty City and so I wanted to attempt to recreate it with the procedural generation. I found some buildings that looks somewhat similar on the unity asset store. The grassy portions are also perfect since that part of New York has green patches of land in between some of the buildings.
