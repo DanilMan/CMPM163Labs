@@ -139,3 +139,5 @@ I changed the original tutorial rules of F -> FF+[+F-F-F]-[-F+F+F] into F -> FF+
 ![](lab9/secondI.png)
 #### first image of my tree:
 ![](lab9/thirdI.png)
+#### Description:
+I played around with the original tutorial formula again, but this time I wanted to make it more chaotic. So I used the formual F -> FF-[+F-]+[+F-[-F-[+F-F+]-F+]-[-F+[+F-F-F+]+F+F-F] which I tried to make sure that the angle always changes before and after each line is drawn. I also added in many brackets to make it very recursive and wild. I think the final result shows that.
