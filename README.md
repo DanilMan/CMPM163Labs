@@ -100,4 +100,12 @@ My partner, Matthew, worked on the part 1 portion for this lab and created a sce
 #### image of insirational city:
 ![](lab8/NY_housing.jpg)
 #### image of generated city:
-![](lab8/Procedural City.jpg)
+![](lab8/Procedural_City.jpg)
+#### My Design:
+I remembered that city from playing GTA Liberty City and so I wanted to attempt to recreate it with the procedural generation. I found some buildings that looks somewhat similar on the unity asset store. The grassy portions are also perfect since that part of New York has green patches of land in between some of the buildings.
+#### My Partner's Design:
+1. He chose part 1.
+
+2. He found that making the colors of his buildings feel cohesive and intentional while still random and varied was most challenging.
+
+3. He discovered that changing the scale of the buildings to match the project's gameplay while still adding to the functionality of the core loop, was the most interesting aspect of the project, imaging he was working towards producing a video game map to play on.
