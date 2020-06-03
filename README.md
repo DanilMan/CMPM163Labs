@@ -109,3 +109,15 @@ I remembered that city from playing GTA Liberty City and so I wanted to attempt 
 2. He found that making the colors of his buildings feel cohesive and intentional while still random and varied was most challenging.
 
 3. He discovered that changing the scale of the buildings to match the project's gameplay while still adding to the functionality of the core loop, was the most interesting aspect of the project, imaging he was working towards producing a video game map to play on.
+
+## Lab 8
+
+#### image of unity tutorial L-System:
+![](lab9/first_tree.png)
+#### image of my unity L-System:
+![](lab9/tree.png)
+
+Link to video of tree growth:
+https://drive.google.com/open?id=1KSwH6gdae-k4wNS78KD6h7VYJ46uOlQV
+#### Description:
+I changed the original tutorial rules of F -> FF+[+F-F-F]-[-F+F+F] into F -> FF+[+F-F>[<F>F>]-F]-[-F+F<[>F<F<]+F], but I added in a new break with the brackets to add more spliting to my algorithm. The '<' and '>' characters are meant to now change the angle in the perpendicular axes, so that my "tree" could split off into 3D space and look slightly more real. The way I did that was simply adding code for if getting the '<' or '>' characters it then rotated the game object in its X axis instead of its Y like the '+' and '-' characters do. I also added a color randomizer that varried in ranges from a darker brown (in the first generation), to varying greens (in the last generation).
